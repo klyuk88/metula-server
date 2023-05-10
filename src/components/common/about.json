@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_main_page_abouts",
+  "info": {
+    "displayName": "about",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "advantage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "marketing.advantages"
+    }
+  }
+}

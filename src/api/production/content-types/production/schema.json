@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "about_pages",
+  "collectionName": "productions",
   "info": {
-    "singularName": "about-page",
-    "pluralName": "about-pages",
-    "displayName": "About page",
+    "singularName": "production",
+    "pluralName": "productions",
+    "displayName": "Production page",
     "description": ""
   },
   "options": {
@@ -15,27 +15,20 @@
     "title": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
-    "content": {
-      "type": "richtext"
-    },
     "seo": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
     },
-    "banner": {
+    "gallery": {
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": true
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "review",
     "pluralName": "reviews",
-    "displayName": "Reviews"
+    "displayName": "Reviews",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,23 +13,28 @@
   "pluginOptions": {},
   "attributes": {
     "company": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "content": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "date": {
-      "type": "date"
+      "type": "date",
+      "required": true,
+      "default": "2023-01-01"
     }
   }
 }
